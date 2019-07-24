@@ -26,11 +26,14 @@ SECRET_KEY = '#z1h8@c^$f)j131thbs$733rutub+_m__t9m%y-4g6z#!f+iy^'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
-
 # Application definition
 
 INSTALLED_APPS = [
+    "blog",
+    "comment",
+    "config",
+
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
