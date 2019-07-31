@@ -5,7 +5,8 @@ from django.db import models
 
 # Create your models here.
 class Comment(models.Model):
-
+    def __str__(self):
+        return self.nickname
     Target = models.ForeignKey(Post,verbose_name="评论目标",on_delete=models.CASCADE)
     nickname = models.CharField(max_length=128,verbose_name="昵称")
     email= models.EmailField(verbose_name="邮箱")

@@ -6,6 +6,8 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 class Sidebar(models.Model):
+    def __str__(self):
+        return self.title
     STATUS_NORMAL = 1;
     STATUS_DELETE = 0;
     STATUS_ITEM = (
@@ -29,6 +31,8 @@ class Sidebar(models.Model):
 
 
 class Link(models.Model):
+    def __str__(self):
+        return self.title
     STATUS_NORMAL = 1;
     STATUS_DELETE = 0;
     STATUS_ITEM = (
