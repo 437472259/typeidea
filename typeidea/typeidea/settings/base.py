@@ -28,8 +28,11 @@ DEBUG = True
 ALLOWED_HOSTS = []
 # Application definition
 
+
+
 INSTALLED_APPS = [
-    "blog",
+     "typeidea",
+     "blog",
     "comment",
     "config",
 
@@ -54,10 +57,12 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'typeidea.urls'
 
+THEME = 'bootstrap'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'themes', THEME,'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

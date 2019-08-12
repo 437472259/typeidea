@@ -4,7 +4,6 @@ from django.contrib import admin
 from django.urls import reverse
 from django.utils.html import format_html
 from .models import Post,Category,Tag
-from .adminforms import PostAdminForm
 from typeidea.base_admin import BaseOwnerAdmin
 from typeidea.custom_site import custom_site
 # Register your models here.
